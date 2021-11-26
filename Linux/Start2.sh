@@ -32,4 +32,4 @@ echo "--------------------------------------------------------------------------
 sleep $start_time
 echo ""
 sh ./start2.sh
-#注意! 如果你将start2.sh改为server.sh，那么 sh ./start2.sh 要改为 sh ./server.sh
+#注意! 如果你将start2.sh改为server.sh，那么 sh ./start2.sh 也要改为 sh ./server.sh
