@@ -1,5 +1,5 @@
 #!/bin/sh
-start_time=20s  #等待多少秒后重启要加时间单位
+ReStart_Time=20s  #等待多少秒后重启要加时间单位
 jvm_ram_xms="512M"  #设置最小内存
 jvm_ram_xmx="1024M"  #设置最小内存
 jar_name=""  #开服核心的名字记得加.jar后缀名
@@ -25,11 +25,11 @@ echo ""
 echo "------------------------------------------------------------------------------------------------------------------------"
 echo ""
 echo "服务器异常或被手动关闭等待关闭"
-echo "服务器将在$start_time后重启,按Ctrl+c关闭"
+echo "服务器将在$ReStart_Time后重启,按Ctrl+c关闭"
 echo "[$server_name]"
 echo ""
 echo "------------------------------------------------------------------------------------------------------------------------"
-sleep $start_time
+sleep $ReStart_Time
 echo ""
 sh ./start2.sh
 #注意! 如果你将start2.sh改为server.sh，那么 sh ./start2.sh 也要改为 sh ./server.sh
