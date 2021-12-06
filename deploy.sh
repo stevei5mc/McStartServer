@@ -3,7 +3,7 @@ echo "========================"
 echo "MC服务器环境部署脚本"
 echo "https://github.com/stevei5mc/McStartServer"
 echo "========================"
-#sleep 5s
+echo ""
 echo "========================"
 echo "    选    择    菜    单    "
 echo " [1] 部署mc服务器环境"
