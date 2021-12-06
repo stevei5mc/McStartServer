@@ -3,7 +3,7 @@
 #毕竟要搞的判断一大堆
 echo "========================"
 echo "MC服务器环境部署脚本"
-echo "https://github.com/stevei5mc/McStartServer"
+echo "https://github.com/stevei5mc/McStartServer/tree/deploy"
 echo "========================"
 echo ""
 echo "========================"
@@ -35,12 +35,20 @@ read -p "请输入你想要进行的操作代码: " menu0
 
 #第三步 下载开服脚本
 	if [ "$menu3" = "1" ];then
-		echo -e "\033[32m 开始下载Start1.sh \033[0m"
-		wget https://raw.githubusercontent.com/stevei5mc/McStartServer/main/Linux/Start1.sh
-		echo -e "\033[32m 下载完成，即将赋予可执行权限 \033[0m"
-		chmod 755 Start1.sh
-		echo -e "\033[32m 已赋予可执行权限 \n 把Start1.sh放到服务端根目录，安照注释填写后输入 sh ./Start1.sh方可运行服务器 \033[0m"
-		exit
+		if [ -f Start1.sh ];then
+			echo -e "\033[31m 文件已存在!停止下载! \033[0m"
+			exit
+		fi
+			echo -e "\033[32m 开始下载Start1.sh \033[0m"
+			wget https://raw.githubusercontent.com/stevei5mc/McStartServer/main/Linux/Start1.sh
+			if [ -f Start1.sh ];then
+				echo -e "\033[32m 下载完成，即将赋予可执行权限 \033[0m"
+				chmod 755 Start1.sh
+				echo -e "\033[32m 已赋予可执行权限 \n 把Start1.sh放到服务端根目录，安照注释填写后输入 sh ./Start1.sh方可运行服务器 \033[0m"
+				exit
+			else
+				echo -e "\033[31m 下载失败! 请重新下载! \033[0m"
+			fi
 	elif [ "$menu3" = "2" ];then
 		echo -e "\033[32m 开始下载Start2.sh \033[0m"
 		wget https://raw.githubusercontent.com/stevei5mc/McStartServer/main/Linux/Start2.sh
