@@ -6,7 +6,7 @@ set cq=0
 for /f "tokens=1,* delims==" %%a in ('find "server-port="^<server.properties') do ( set server_port=%%b)
 for /f "tokens=1,* delims==" %%a in ('find "max-players="^<server.properties') do ( set max-players=%%b)
 for /f "tokens=1,* delims==" %%a in ('find "server-ip="^<server.properties') do ( set server_ip=%%b)
-::设置用于启动的java版本 (默认填 java，但然你也可以填java的安装路径)
+::设置用于启动的java版本 (默认填 java，当然你也可以填java的安装路径)
 set java_version=java
 ::服务器名提示
 set server_name=test
