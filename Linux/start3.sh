@@ -15,7 +15,7 @@ echo "开服核心设置为: $jar_name"
 echo ""
 echo "---------------------------------------------------"
 echo ""
-java -XX:+UseCompressedOops -XX:+AggressiveOpts -Dlog4j2.formatMsgNoLookups=true -Xms$jvm_ram_xms -Xmx$jvm_ram_xmx  -jar $jar_name
+java -XX:+UseCompressedOops -XX:+AggressiveOpts -Xms$jvm_ram_xms -Xmx$jvm_ram_xmx  -jar $jar_name
 echo ""
 echo "服务器已关闭"
 echo ""

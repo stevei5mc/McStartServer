@@ -1,6 +1,12 @@
-@echo off
+﻿@echo off
 ::将重启次数设置为0(别动)
 set cq=0
+echo -------------------------------------------------------------------------------------------
+echo.
+echo 你可以在下面的链接查看其他的启动脚本
+echo https://github.com/stevei5mc/McStartServer
+echo.
+echo -------------------------------------------------------------------------------------------
 :mc
 :: 从server.properties获得部分信息
 for /f "tokens=1,* delims==" %%a in ('find "server-port="^<server.properties') do ( set server_port=%%b)
@@ -27,11 +33,6 @@ echo 服务器名:[%server_name%] 重启次数:[%cq%次]
 echo 最大在线人数:[%max-players%]
 echo 最小内存:[%ram_Xms%] 最大内存:[%ram_Xmx%]
 echo IP[%server_IP%] 端口[%server_port%]
-echo.
-echo -------------------------------------------------------------------------------------------
-echo.
-echo 你可以在下面的链接查看其他的启动脚本
-echo https://github.com/stevei5mc/McStartServer
 echo.
 echo Tips:如果您需要关闭服务端请输入stop命令后关闭本窗口；以防数据丢失,导致回档。
 echo.
