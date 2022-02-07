@@ -4,8 +4,4 @@
 
 Windows脚本用ANSI编码，Linux脚本用UTF-8编码
 
-Windows脚本用ANSI编码，Linux脚本用UTF-8编码
-
-Windows脚本用ANSI编码，Linux脚本用UTF-8编码
-
-重要的事情说三遍
+linux脚本记得赋予可执行权限方可执行;赋予可执行权限命令 chmod 777 <想要赋予可执行权限的程序>
