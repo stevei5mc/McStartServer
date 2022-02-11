@@ -1,6 +1,7 @@
 @echo off
 ::将重启次数设置为0(别动)
 set cq=0
+set stop_server_time=暂无数据
 echo -------------------------------------------------------------------------------------------
 echo.
 echo 你可以在下面的链接查看其他的启动脚本
@@ -24,20 +25,19 @@ set ram_Xmx=1024m
 set server_jar_name=nukkit-1.0-SNAPSHOT
 ::设置重启等待时间
 set restart_time=20
-title [%server_name%] [%server_IP%:%server_port%] 重启[%cq%]次 最大在线人数:[%max-players%] 最大内存:[%ram_Xmx%]
+title [%server_name%] [%server_IP%:%server_port%] 重启[%cq%]次 最大在线人数[%max-players%] 最大内存[%ram_Xmx%] 上次关服重启时间[%stop_server_time%]
 echo.
 echo -------------------------------------------------------------------------------------------
 echo.
 echo 当前服务器信息: 
-echo 服务器名:[%server_name%] 重启次数:[%cq%次]
-echo 最大在线人数:[%max-players%]
-echo 最小内存:[%ram_Xms%] 最大内存:[%ram_Xmx%]
-echo IP[%server_IP%] 端口[%server_port%]
+echo 服务器名[%server_name%] 重启次数[%cq%次] 上次关服重启时间[%stop_server_time%]
+echo 最小内存[%ram_Xms%] 最大内存[%ram_Xmx%]
+echo iP端口[%server_IP%:%server_port%] 最大在线人数[%max-players%]
 echo.
 echo Tips:如果您需要关闭服务端请输入stop命令后关闭本窗口；以防数据丢失,导致回档。
 echo.
 echo -------------------------------------------------------------------------------------------
-echo 现在时间[%DATE% %TIME% 服务器正在启动
+echo 服务器启动时间 %date:~0,4%/%date:~5,2%/%date:~8,2%-%time:~0,2%:%time:~3,2%:%time:~6,2%
 echo -------------------------------------------------------------------------------------------
 echo.
 %java_version% -XX:+UseCompressedOops -XX:+AggressiveOpts -Xms%ram_Xms% -Xmx%ram_Xmx% -jar %server_jar_name%.jar
@@ -45,7 +45,7 @@ echo.
 echo -------------------------------------------------------------------------------------------
 echo.
 echo 服务端出现异常或被手动关闭 请等待 %restart_time% 秒后自动重启服务器
-echo 现在时间[%DATE% %TIME%]
+echo 服务器关闭时间已记录 &set stop_server_time=%date:~0,4%/%date:~5,2%/%date:~8,2%-%time:~0,2%:%time:~3,2%:%time:~6,2%
 echo.
 echo -------------------------------------------------------------------------------------------
 echo.

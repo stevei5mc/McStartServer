@@ -1,51 +1,51 @@
-ï»¿@echo off
-::å°†é‡å¯æ¬¡æ•°è®¾ç½®ä¸º0(åˆ«åŠ¨)
+@echo off
+::½«ÖØÆô´ÎÊıÉèÖÃÎª0(±ğ¶¯)
 set cq=0
+set stop_server_time=ÔİÎŞÊı¾İ
 echo -------------------------------------------------------------------------------------------
 echo.
-echo ä½ å¯ä»¥åœ¨ä¸‹é¢çš„é“¾æ¥æŸ¥çœ‹å…¶ä»–çš„å¯åŠ¨è„šæœ¬
+echo Äã¿ÉÒÔÔÚÏÂÃæµÄÁ´½Ó²é¿´ÆäËûµÄÆô¶¯½Å±¾
 echo https://github.com/stevei5mc/McStartServer
 echo.
 echo -------------------------------------------------------------------------------------------
 :mc
-:: ä»server.propertiesè·å¾—éƒ¨åˆ†ä¿¡æ¯
+:: ´Óserver.properties»ñµÃ²¿·ÖĞÅÏ¢
 for /f "tokens=1,* delims==" %%a in ('find "server-port="^<server.properties') do ( set server_port=%%b)
 for /f "tokens=1,* delims==" %%a in ('find "max-players="^<server.properties') do ( set max-players=%%b)
 for /f "tokens=1,* delims==" %%a in ('find "server-ip="^<server.properties') do ( set server_ip=%%b)
-::è®¾ç½®ç”¨äºå¯åŠ¨çš„javaç‰ˆæœ¬ (é»˜è®¤å¡« javaï¼Œå½“ç„¶ä½ ä¹Ÿå¯ä»¥å¡«javaçš„å®‰è£…è·¯å¾„)
+::ÉèÖÃÓÃÓÚÆô¶¯µÄjava°æ±¾ (Ä¬ÈÏÌî java£¬µ±È»ÄãÒ²¿ÉÒÔÌîjavaµÄ°²×°Â·¾¶)
 set java_version=java
-::æœåŠ¡å™¨åæç¤º
+::·şÎñÆ÷ÃûÌáÊ¾
 set server_name=test
-::è®¾ç½®æœ€å°å†…å­˜
+::ÉèÖÃ×îĞ¡ÄÚ´æ
 set ram_Xms=512m
-::è®¾ç½®æœ€å¤§å†…å­˜
+::ÉèÖÃ×î´óÄÚ´æ
 set ram_Xmx=1024m
-::è®¾ç½®å¼€æœæ ¸å¿ƒå(å¼€æœæ ¸å¿ƒåä¸ç”¨åŠ .jarçš„åç¼€å)
+::ÉèÖÃ¿ª·şºËĞÄÃû(¿ª·şºËĞÄÃû²»ÓÃ¼Ó.jarµÄºó×ºÃû)
 set server_jar_name=20
-::è®¾ç½®é‡å¯ç­‰å¾…æ—¶é—´
+::ÉèÖÃÖØÆôµÈ´ıÊ±¼ä
 set restart_time=20
-title [%server_name%] [%server_IP%:%server_port%] é‡å¯[%cq%]æ¬¡ æœ€å¤§åœ¨çº¿äººæ•°:[%max-players%] æœ€å¤§å†…å­˜:[%ram_Xmx%]
+title [%server_name%] [%server_IP%:%server_port%] ÖØÆô[%cq%]´Î ×î´óÔÚÏßÈËÊı[%max-players%] ×î´óÄÚ´æ[%ram_Xmx%] ÉÏ´Î¹Ø·şÖØÆôÊ±¼ä[%stop_server_time%]
 echo.
 echo -------------------------------------------------------------------------------------------
 echo.
-echo å½“å‰æœåŠ¡å™¨ä¿¡æ¯: 
-echo æœåŠ¡å™¨å:[%server_name%] é‡å¯æ¬¡æ•°:[%cq%æ¬¡]
-echo æœ€å¤§åœ¨çº¿äººæ•°:[%max-players%]
-echo æœ€å°å†…å­˜:[%ram_Xms%] æœ€å¤§å†…å­˜:[%ram_Xmx%]
-echo IP[%server_IP%] ç«¯å£[%server_port%]
+echo µ±Ç°·şÎñÆ÷ĞÅÏ¢: 
+echo ·şÎñÆ÷Ãû[%server_name%] ÖØÆô´ÎÊı[%cq%´Î] ÉÏ´Î¹Ø·şÖØÆôÊ±¼ä[%stop_server_time%]
+echo ×îĞ¡ÄÚ´æ[%ram_Xms%] ×î´óÄÚ´æ[%ram_Xmx%]
+echo iP¶Ë¿Ú[%server_IP%:%server_port%] ×î´óÔÚÏßÈËÊı[%max-players%]
 echo.
-echo Tips:å¦‚æœæ‚¨éœ€è¦å…³é—­æœåŠ¡ç«¯è¯·è¾“å…¥stopå‘½ä»¤åå…³é—­æœ¬çª—å£ï¼›ä»¥é˜²æ•°æ®ä¸¢å¤±,å¯¼è‡´å›æ¡£ã€‚
+echo Tips:Èç¹ûÄúĞèÒª¹Ø±Õ·şÎñ¶ËÇëÊäÈëstopÃüÁîºó¹Ø±Õ±¾´°¿Ú£»ÒÔ·ÀÊı¾İ¶ªÊ§,µ¼ÖÂ»Øµµ¡£
 echo.
 echo -------------------------------------------------------------------------------------------
-echo ç°åœ¨æ—¶é—´[%DATE% %TIME% æœåŠ¡å™¨æ­£åœ¨å¯åŠ¨
+echo ·şÎñÆ÷Æô¶¯Ê±¼ä %date:~0,4%/%date:~5,2%/%date:~8,2%-%time:~0,2%:%time:~3,2%:%time:~6,2%
 echo -------------------------------------------------------------------------------------------
 echo.
 %java_version% -XX:+UseCompressedOops -XX:+AggressiveOpts -Xms%ram_Xms% -Xmx%ram_Xmx% -jar %server_jar_name%.jar
 echo.
 echo -------------------------------------------------------------------------------------------
 echo.
-echo æœåŠ¡ç«¯å‡ºç°å¼‚å¸¸æˆ–è¢«æ‰‹åŠ¨å…³é—­ è¯·ç­‰å¾… %restart_time% ç§’åè‡ªåŠ¨é‡å¯æœåŠ¡å™¨
-echo ç°åœ¨æ—¶é—´[%DATE% %TIME%]
+echo ·şÎñ¶Ë³öÏÖÒì³£»ò±»ÊÖ¶¯¹Ø±Õ ÇëµÈ´ı %restart_time% Ãëºó×Ô¶¯ÖØÆô·şÎñÆ÷
+echo ·şÎñÆ÷¹Ø±ÕÊ±¼äÒÑ¼ÇÂ¼ &set stop_server_time=%date:~0,4%/%date:~5,2%/%date:~8,2%-%time:~0,2%:%time:~3,2%:%time:~6,2%
 echo.
 echo -------------------------------------------------------------------------------------------
 echo.
