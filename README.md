@@ -7,6 +7,6 @@
 > [服务器环境部署-自动部署mc服务器运行环境](https://github.com/stevei5mc/McStartServer/tree/deploy) 
 
 ## 注意事项
-> 建议复制后粘贴到空白文档保存到指定编码以免遇到编码问题  
-> Windows脚本用ANSI编码，Linux脚本用UTF-8编码  
-> linux脚本记得赋予可执行权限方可执行;赋予可执行权限命令 chmod 777 <想要赋予可执行权限的程序>  
+> **建议复制后粘贴到空白文档保存到指定编码以免遇到编码问题**  
+> **Windows脚本用ANSI编码，Linux脚本用UTF-8编码**  
+> **linux脚本记得赋予可执行权限方可执行;赋予可执行权限命令 chmod 777 <想要赋予可执行权限的程序>**  
