@@ -1,7 +1,7 @@
 ﻿#!/bin/sh
 ReStart_Time=20s  #等待多少秒后重启要加时间单位
 jvm_ram_xms="512M"  #设置最小内存
-jvm_ram_xmx="1024M"  #设置最小内存
+jvm_ram_xmx="1024M"  #设置最大内存
 jar_name="powernukkit1.17.10.jar"  #开服核心的名字记得加.jar后缀名
 echo ""
 echo "服务器已开启"

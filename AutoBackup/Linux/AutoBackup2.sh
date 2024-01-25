@@ -1,13 +1,13 @@
 #!/bin/sh
-Backup_path="【填写备份路径】"
-mkdir -p $Backup_path		#如果文件夹不存在则知道创建
+Backup_path="【填写备份路径】"	#填写想要备份到的路径
 Backup_Day="【填写天数】"	#填写理想要保存备份的天数，超过则自动删除！
 Backup_Time="【填写一个时间】"	#提前多少秒通知玩家(必须填写数值)
-#-----分割线-----
 Screen_Name="【screen名】"		#填写对应的screen程序名
+Backup_Name="【备份名】"	#为你的服务端的备份起个名字
+server_path="【服务端所在的目录】"	#填写服务端所在的路径
+#-----分割线-----
 t=$Backup_Time
-Backup_Name="【备份名】"
-server_path="【服务端所在的目录】"
+mkdir -p $Backup_path		#如果文件夹不存在则知道创建
 mkdir -p $Backup_path/$Backup_Name/temp		#为存储备份再创建一个文件夹和临时备份目录(前提是文件夹不存在)
 cd $Backup_path/$Backup_Name/	#跳转到备份存储目录(临时)
 screen -xU $screen_name -p 0 -X stuff "save-all"    #跳转到备份存储目录(临时)
