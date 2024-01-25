@@ -1,4 +1,4 @@
-#### [返回](../README.md)|[自动备份脚本](../AutoBackup/README.md)|[服务器维护脚本](README)|[服务器日志保存脚本](../save_log/README.md)|[服务器启动脚本](README)
+#### [返回](../README.md)|[自动备份脚本](../AutoBackup/README.md)|[服务器维护脚本](README)|[服务器日志保存脚本](../save_log/README.md)|[服务器启动脚本](../server_script/README.md)
 # 我的世界服务器快速部署脚本 Test  
 > **本项目还没有开发完成**  
 > **如果你有开发能力你可以为本项目提交pr**  

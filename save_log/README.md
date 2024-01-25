@@ -1,4 +1,4 @@
-#### [返回](../README.md)|[自动备份脚本](../AutoBackup/README.md)|[服务器快速部署脚本](../deploy/README.md)|[服务器维护脚本](README)|[服务器启动脚本](README)
+#### [返回](../README.md)|[自动备份脚本](../AutoBackup/README.md)|[服务器快速部署脚本](../deploy/README.md)|[服务器维护脚本](README)|[服务器启动脚本](../server_script/README.md)
 # 服务器日志保存脚本
 ## 描述
 > 该脚本解决了原来服务器只能保留一定数量的日志文件  

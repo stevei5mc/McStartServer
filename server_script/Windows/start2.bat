@@ -22,7 +22,7 @@ set ram_Xms=512m
 ::设置最大内存
 set ram_Xmx=1024m
 ::设置开服核心名(开服核心名不用加.jar的后缀名)
-set server_jar_name=nukkit-1.0-SNAPSHOT
+set server_jar_name=server
 ::设置重启等待时间
 set restart_time=20
 title [%server_name%] [%server_IP%:%server_port%] 重启[%cq%]次 最大在线人数[%max-players%] 最大内存[%ram_Xmx%] 上次关服重启时间[%stop_server_time%]

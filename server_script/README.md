@@ -1,11 +1,12 @@
-#### [返回](../README.md)[自动备份脚本](../AutoBackup/README.md)|[服务器快速部署脚本](../deploy/README.md)|[服务器维护脚本](README)|[服务器日志保存脚本](../save_log/README.md)
+#### [返回](../README.md)|[自动备份脚本](../AutoBackup/README.md)|[服务器快速部署脚本](../deploy/README.md)|[服务器维护脚本](README)|[服务器日志保存脚本](../save_log/README.md)
 # 我的世界服务器启动脚本
 
 ## 可配置项(Windows)
 ![1](./Windows/image/1.PNG)
 
 ## 可配置项(Linux)
-![2](./Linux/image/1.PNG) ![3](./Linux/image/2.PNG)
+![2](./Linux/image/1.PNG)  
+![3](./Linux/image/2.PNG)
 
 ## 注意事项
 > **建议复制后粘贴到空白文档保存到指定编码以免遇到编码问题**  
