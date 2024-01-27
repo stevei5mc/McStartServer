@@ -25,14 +25,14 @@ set ram_Xmx=1024m
 set server_jar_name=server
 ::设置重启等待时间
 set restart_time=20
-title [%server_name%] [%server_IP%:%server_port%] 重启[%cq%]次 最大在线人数[%max-players%] 最大内存[%ram_Xmx%] 上次关服重启时间[%stop_server_time%]
+title [%server_name%] [%server_IP%:%server_port%] 重启[%cq%]次 最大在线[%max-players%]人 最大内存[%ram_Xmx%] 上次关服重启时间[%stop_server_time%]
 echo.
 echo -------------------------------------------------------------------------------------------
 echo.
 echo 当前服务器信息: 
 echo 服务器名[%server_name%] 重启次数[%cq%次] 上次关服重启时间[%stop_server_time%]
 echo 最小内存[%ram_Xms%] 最大内存[%ram_Xmx%]
-echo iP端口[%server_IP%:%server_port%] 最大在线人数[%max-players%]
+echo iP端口[%server_IP%:%server_port%] 最大在线[%max-players%]人
 echo.
 echo Tips:如果您需要关闭服务端请输入stop命令后关闭本窗口；以防数据丢失,导致回档。
 echo.
