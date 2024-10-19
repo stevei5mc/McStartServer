@@ -15,7 +15,7 @@ set server_name=test
 set ram_Xms=512m
 ::设置最大内存
 set ram_Xmx=1024m
-::设置开服核心名(开服核心名不用加.jar的后缀名)
+::设置开服核心名(开服核心名不用加.jar的后缀名，文件名例server.jar，就填写server)
 set server_jar_name=server
 ::设置重启等待时间
 set restart_time=20
@@ -28,12 +28,6 @@ jvm_ram_xms="512M"  #设置最小内存
 jvm_ram_xmx="1024M"  #设置最大内存
 jar_name="server.jar"  #开服核心的名字记得加.jar后缀名
 server_name="testmc"  #服务名(方便维护用的)，比如说是生存服就将testmc改为生存服
-```
-```sh
-ReStart_Time=20s  #等待多少秒后重启要加时间单位
-jvm_ram_xms="512M"  #设置最小内存
-jvm_ram_xmx="1024M"  #设置最大内存
-jar_name="server.jar"  #开服核心的名字记得加.jar后缀名
 ```
 
 ## **注意事项**

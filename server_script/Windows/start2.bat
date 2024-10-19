@@ -21,7 +21,7 @@ set server_name=test
 set ram_Xms=512m
 ::设置最大内存
 set ram_Xmx=1024m
-::设置开服核心名(开服核心名不用加.jar的后缀名)
+::设置开服核心名(开服核心名不用加.jar的后缀名，文件名例server.jar，就填写server)
 set server_jar_name=server
 ::设置重启等待时间
 set restart_time=20
