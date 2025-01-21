@@ -3,8 +3,8 @@ setlocal enabledelayedexpansion
 :: 可编辑的内容!!!
 :: 服务器生成的日志名字叫啥名就填写啥名不然是没有用的 (latest.log 或 server.log) 大部分的服务端都是这俩种日志文件
 set logName=server.log
-:: 7-Zip的安装路径，根据实际情况修改
-set winrarPath="D:\Program Files\WinRAR\rar.exe"
+:: WinRAR的安装路径，根据实际情况修改
+set winrarPath="C:\Program Files\WinRAR\rar.exe"
 ::不可编辑内容
 cd .\logs
 if exist %logName% (

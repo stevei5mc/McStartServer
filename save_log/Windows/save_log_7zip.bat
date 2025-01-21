@@ -23,7 +23,6 @@ set countThis=1
 set countMax=2
 :loop
 if exist %logTimeFile%-%countThis%.log.gz (
-    set /a countMax+=1
     set /a countThis+=1
     set /a countMax+=1
     goto loop
@@ -32,5 +31,5 @@ if exist %logTimeFile%-%countThis%.log.gz (
     ren %logName% %logTimeFile%-%countThis%.log
     %sevenZipPath% a -tgzip "%logTimeFile%-%countThis%.log.gz" "%logTimeFile%-%countThis%.log"
     del "%logTimeFile%-%countThis%.log"
+    exit
 )
-exit
