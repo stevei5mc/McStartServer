@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+﻿#!/bin/bash
 ReStart_Time=5s  #等待多少秒后重启要加时间单位
 jvm_ram_xms="512M"  #设置最小内存
 jvm_ram_xmx="1024M"  #设置最大内存
@@ -6,10 +6,13 @@ jar_name="server.jar"  #开服核心的名字记得加.jar后缀名
 server_name="testmc"  #服务名(方便维护用的)，比如说是生存服就将testmc改为生存服
 echo ""
 echo "服务器已开启"
+port=$(grep "server-port=" server.properties | sed 's/server-port=//g')
+ip=$(grep "server-ip=" server.properties | sed 's/server-ip=//g')
 echo ""
 echo "---------------------------------------------------"
 echo ""
 echo "$server_name"
+echo "iP端口: $ip:$port"
 echo "服务设置信息:"
 echo "最小内存设置为: $jvm_ram_xms"
 echo "最大内存设置为: $jvm_ram_xmx"

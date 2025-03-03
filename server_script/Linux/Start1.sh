@@ -12,12 +12,17 @@ jvm_ram_xmx="1024M"  #设置最大内存
 jar_name="server.jar"  #开服核心的名字记得加.jar后缀名
 server_name="testmc"  #服务名(方便维护用的)，比如说是生存服就将testmc改为生存服
 echo "服务器已开启"
+port=$(grep "server-port=" server.properties | sed 's/server-port=//g')
+ip=$(grep "server-ip=" server.properties | sed 's/server-ip=//g')
 echo ""
-echo "------------------------------------------------------------------------------------------------------------------------"
-echo "服务器信息"
+echo "---------------------------------------------------"
 echo ""
-echo "[$server_name] 重启[$ReStart_Count]次"
-echo "最小内存[$jvm_ram_xms] 最大内存[$jvm_ram_xmx]"
+echo "$server_name"
+echo "iP端口: $ip:$port"
+echo "服务设置信息:"
+echo "最小内存设置为: $jvm_ram_xms"
+echo "最大内存设置为: $jvm_ram_xmx"
+echo "开服核心设置为: $jar_name"
 echo ""
 echo "------------------------------------------------------------------------------------------------------------------------"
 echo ""
