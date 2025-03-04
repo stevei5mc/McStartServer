@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+﻿#!/bin/bash
 echo ""
 echo "你可以在下面的链接查看其他的启动脚本"
 echo "https://github.com/stevei5mc/McStartServer"
@@ -14,15 +14,13 @@ server_name="testmc"  #服务名(方便维护用的)，比如说是生存服就�
 echo "服务器已开启"
 port=$(grep "server-port=" server.properties | sed 's/server-port=//g')
 ip=$(grep "server-ip=" server.properties | sed 's/server-ip=//g')
+maxPlayers=$(grep "max-players=" server.properties | sed 's/max-players=//g')
 echo ""
 echo "---------------------------------------------------"
 echo ""
 echo "$server_name"
-echo "iP端口: $ip:$port"
-echo "服务设置信息:"
-echo "最小内存设置为: $jvm_ram_xms"
-echo "最大内存设置为: $jvm_ram_xmx"
-echo "开服核心设置为: $jar_name"
+echo "iP端口: [$ip:$port] 最大在线人数：[$maxPlayers] 重启[$ReStart_Count]次"
+echo "最小内存为: [$jvm_ram_xms]  最大内存为: [$jvm_ram_xmx] 开服核心为: [$jar_name]"
 echo ""
 echo "------------------------------------------------------------------------------------------------------------------------"
 echo ""
