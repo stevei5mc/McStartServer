@@ -37,7 +37,7 @@ java -XX:+UseCompressedOops -XX:+AggressiveOpts -Xms1g -Xmx1g -jar server.jar
 log_name="server.log"
 ```
 
-## **注意事项**
-1. **建议复制后粘贴到空白文档保存到指定编码以免遇到编码问题**  
-2. **Windows脚本用`ANSI`编码，Linux脚本用`UTF-8`编码**  
-3. **linux脚本记得赋予可执行权限方可执行;赋予可执行权限命令 `chmod 777 <想要赋予可执行权限的程序>`**  
+## 注意事项和建议
+1. **建议复制后粘贴到空白文档保存到指定编码以免遇到编码问题，也可以直接下载脚本文件，但在修改保存时要注意编码格式的问题**
+2. **Windows脚本用`ANSI`编码来进行保存，Linux脚本用`UTF-8`编码来进行保存**
+3. **Linux脚本记得赋予可执行权限方可执行;赋予可执行权限命令 chmod 777 <目标程序文件>** 
