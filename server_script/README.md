@@ -1,4 +1,8 @@
-#### [返回](../README.md)|[自动备份脚本](../AutoBackup/README.md)|[服务器快速部署脚本](../deploy/README.md)|[服务器维护脚本](README)|[服务器日志保存脚本](../save_log/README.md)
+[返回](../README.md)
+[![1](https://img.shields.io/badge/脚本-自动备份-22?style=plastic&color=blue)](../AutoBackup/README.md)
+[![2](https://img.shields.io/badge/脚本-服务器快速部署-22?style=plastic&color=blue)](../deploy/README.md)
+[![4](https://img.shields.io/badge/脚本-服务器日志保存-22?style=plastic&color=blue)](../save_log/README.md)
+[![5](https://img.shields.io/badge/脚本-服务器启动脚本-22?style=plastic)](../server_script/README.md)
 # 我的世界服务器启动脚本
 
 ## **可配置项**
